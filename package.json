@@ -1,0 +1,51 @@
+{
+  "name": "@onurege3467/log",
+  "version": "2.0.0",
+  "description": "High-performance, enterprise-ready TypeScript logger with Worker Threads, Async Context Tracking, and Sensitive Data Redaction.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "npm run build && node test/test.js",
+    "test:modern": "npm run build && node test/modern-features-test.js",
+    "test:supreme": "npm run build && node test/supreme-test.js",
+    "test:all": "npm test && npm run test:modern && npm run test:supreme",
+    "prepublishOnly": "npm run build",
+    "benchmark": "npm run build && node benchmark/benchmark.js"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "typescript",
+    "worker-threads",
+    "redaction",
+    "security",
+    "async-local-storage",
+    "performance",
+    "enterprise",
+    "colored-logs"
+  ],
+  "author": "onurege3467",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onurege3467/log.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@onurege3467/easycolor": "^2.0.0",
+    "@onurege3467/light-fs": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

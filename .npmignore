@@ -1,0 +1,94 @@
+# Source files (we only need the built files)
+src/
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Development files
+.git/
+.gitignore
+.npmignore
+README.md
+CHANGELOG.md
+LICENSE
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+test-logs/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Build artifacts (if any)
+build/
+out/
+
+# Node modules (should be in .gitignore but just in case)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package lock files (keep only one)
+package-lock.json
+yarn.lock
+
+# TypeScript files (since we're using plain JS)
+*.ts
+*.tsx
+tsconfig.json
+
+# Documentation source files
+docs/
+*.md
+!README.md
+
+# Example files
+examples/
+samples/
+
+# CI/CD files
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# Linting and formatting configs
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
