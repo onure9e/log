@@ -33,7 +33,9 @@ export class FileTransport implements Transport {
         cacheMaxAge: 30000,
         cacheSize: 100,
         compressionEnabled: this.config.compression,
-        compressionThreshold: 1024
+        compressionThreshold: 1024,
+        diskEnabled: true,
+        diskRoot: './logs'
       });
       this.ensureLogDirectory();
       this.startFlushInterval();

@@ -1,6 +1,6 @@
 {
   "name": "@onurege3467/log",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "High-performance, enterprise-ready TypeScript logger with Worker Threads, Async Context Tracking, and Sensitive Data Redaction.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@onurege3467/easycolor": "^2.0.0",
-    "@onurege3467/light-fs": "^2.0.0"
+    "@onurege3467/light-fs": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

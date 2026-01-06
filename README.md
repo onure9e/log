@@ -157,6 +157,22 @@ const logger = new CustomLogger({
 npm run test:all
 ```
 
+## 🔄 Changelog
+
+### v2.1.0
+- 💿 **Disk Persistence**: lite-fs disk mode ile gerçek dosya yazma
+- 📦 **Updated Dependencies**: lite-fs v3.0.0'a güncelleme
+- 🛠️ **Improved File Logging**: Persistent logging desteği
+
+### v2.0.0
+- 🚀 **Worker Threads**: High-performance async logging
+- 🔄 **Async Context**: Request tracing and correlation
+- 🛡️ **Redaction**: Sensitive data protection
+- 📊 **Advanced Features**: Compression, rotation, multiple formats
+
+### v1.0.0
+- 🎯 **Initial Release**: Basic logging functionality
+
 ## 📄 License
 
 MIT © [onure9e](https://github.com/onure9e)
