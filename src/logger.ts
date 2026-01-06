@@ -85,7 +85,7 @@ export class CustomLogger {
     this.contextManager = ContextManager.getInstance();
 
     this.setupLevels();
-    
+
     if (this.config.useWorker) {
       this.initWorker();
     } else {
@@ -241,14 +241,20 @@ export class CustomLogger {
   public getAvailableColors = () => ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'brightBlack'];
   public isValidColor = (color: string) => this.getAvailableColors().includes(color);
   public suggestColors = (ctx: string) => ['blue', 'green'];
-  public updateConfig(u: any) { 
-      this.mergeConfig(u); 
-      this.transports.forEach((t: any) => t.destroy?.());
-      this.setupTransports(); 
+  public addLevel(config: { name: string; priority: number; color: string; symbol: string }): void {
+    this.levels[config.name] = config;
+    this.setupLevels();
   }
+
+  public updateConfig(u: any) { 
+    this.mergeConfig(u); 
+    this.transports.forEach((t: any) => t.destroy?.());
+    this.setupTransports(); 
+  }
+
   public getLogStats = () => {
-      const ft = this.transports.find(t => t instanceof FileTransport) as FileTransport;
-      return ft ? ft.getStats() : null;
+    const ft = this.transports.find(t => t instanceof FileTransport) as FileTransport;
+    return ft ? ft.getStats() : null;
   }
 }
 
